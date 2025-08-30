@@ -8,9 +8,9 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 8000
 
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
 CMD ["gunicorn", "notesapp.wsgi", "--bind", "0.0.0.0:8000"]
 
 
