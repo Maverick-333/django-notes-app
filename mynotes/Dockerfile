@@ -11,5 +11,6 @@ COPY . .
 EXPOSE 3000
 
 CMD ["npm", "start"]
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "notesapp.wsgi", "--bind", "0.0.0.0:8000"]
+
 
