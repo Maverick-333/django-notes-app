@@ -114,5 +114,6 @@ services:
 
 networks:
   notes-app-nw:
+  
 volumes:
   mysql_data:  
